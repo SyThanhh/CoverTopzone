@@ -1,0 +1,116 @@
+:root {
+    --primary-color : #323232;
+    --sup-black-color: #000;
+    --black-color : #101010;
+    --white-color : #f2f2f2;
+    --item-color : #3e3e3f  ;
+    --navbar-search-cart : #2f3033;
+    --navbar-search-cart--hover: #5c5c62;
+    --menu-hover-item : #2d2d2d;
+    --bg-products-color : #3e3e3f;
+    --new-color : #ff9f00;
+    --border-list-store : #757575;
+    --address-store-color : #2997ff;
+    --foot-label-cty : #222;
+    --hover__shadow--product-color : -4px -4px 8px rgb(134 134 134 / 20%), 4px 4px 8px rgb(28 28 28 / 40%);
+    --height-navbar : 60px;
+    --width-menu-item : calc(660px / 6);
+}
+
+html {
+    font-family:  "Helvetica Neue", Helvetica, Arial, "SF Pro Display", sans-serif;
+    font-size: 62.5%;
+    /* line-height: 1.2rem; */
+}
+
+.grid {
+   width: 100%;
+    /* tự động canh giữa */
+    display: block;
+}
+
+.wide {
+    max-width: 1200px;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+/* BUTTON LEFT_RIGHT */
+.slider__button-left-right {
+    
+}
+.slider__button-left-right .icon-left ,
+.slider__button-left-right .icon-right {
+    border-style: none;
+    background-color: var(--navbar-search-cart);
+    color: var(--white-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 18px;
+
+}
+
+.slider__button-left-right .icon-left i ,
+.slider__button-left-right .icon-right i {
+    padding: 5px;
+}
+/* DI CHUYEN ICON */
+.cate_ip-icon {
+    position: relative;
+    left: 10px;
+    bottom: 3px;
+}
+
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left : 0;
+    right:0;
+    bottom:0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    overflow: hidden;
+    z-index: 50;
+
+}
+
+@keyframes FadeIn {
+     0% {
+        opacity: 0;
+        transform: scale(.8);
+     }
+
+     100% {
+        opacity: 1;
+     }
+}
+
+@keyframes FadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(10%,0,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* chia layout */
+.row { 
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.col {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.no_gutters {
+    padding-left: 0;
+    padding-right: 0;
+}
